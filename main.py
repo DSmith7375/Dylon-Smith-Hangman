@@ -1,5 +1,24 @@
 # Create a cool title 
+print(r""" 
+                                                                   
 
+
+ __    __          __       __   ______   __    __ 
+|  \  |  \        |  \     /  \ /      \ |  \  |  \
+| $$  | $$        | $$\   /  $$|  $$$$$$\| $$\ | $$
+| $$__| $$ ______ | $$$\ /  $$$| $$__| $$| $$$\| $$
+| $$    $$|      \| $$$$\  $$$$| $$    $$| $$$$\ $$
+| $$$$$$$$ \$$$$$$| $$\$$ $$ $$| $$$$$$$$| $$\$$ $$
+| $$  | $$        | $$ \$$$| $$| $$  | $$| $$ \$$$$
+| $$  | $$        | $$  \$ | $$| $$  | $$| $$  \$$$
+ \$$   \$$         \$$      \$$ \$$   \$$ \$$   \$$
+                                                   
+                                                   
+                                                   
+
+
+  
+""")
 # Function to get letter from the user
 def getLetter():
   # Create a variable to hold the letter with a dummy value
@@ -59,7 +78,7 @@ while not getWinner(secretWord, letters) and guessCounter < 5:
     print("Correct!")
   # Otherwise
   else:
-    # display it's a bad guess
+    # display it's a bad guess and keep track of incorrect guesses 
     max_Guesses = max_Guesses - 1
     print("Incorrect!")
     print()
@@ -70,7 +89,7 @@ while not getWinner(secretWord, letters) and guessCounter < 5:
   
   hiddenWord(secretWord, letters)
   print()
-  
+ # Final displays  
 if guessCounter == 5:
   print("Sorry you lose try again? ")
 else:
